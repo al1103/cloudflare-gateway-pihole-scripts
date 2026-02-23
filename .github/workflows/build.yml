@@ -3,7 +3,7 @@ name: Publish to container registry
 on:
   push:
     branches:
-      - v*
+      - 'v1.*'
   release:
     types: [ "published" ]
   # The "Sync branch" workflow doesn't trigger the push event, therefore we need a separate trigger for that
